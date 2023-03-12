@@ -4,6 +4,8 @@ const input = document.getElementById('input');
 
 let breakDownArray = [];
 
+let el = document.getElementById('letter');
+
 const letters = {
     א: 1,
     ב: 2,
@@ -35,6 +37,7 @@ const letters = {
 };
 
 calBtn .onclick = () => {
+    el .innerHTML = '';
 
     breakDownArray = [];
 
@@ -44,7 +47,6 @@ calBtn .onclick = () => {
 
     let results = 0;
 
-    let el = document.getElementById('letter');
 
     for (let i = 0; i < split.length; i++) {
 
