@@ -6,6 +6,11 @@ let breakDownArray = [];
 
 let el = document.getElementById('letter');
 
+// const falseLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+const falseLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
+
+
 const letters = {
     א: 1,
     ב: 2,
@@ -33,8 +38,13 @@ const letters = {
     ק: 100,
     ר: 200,
     ש: 300,
-    ת: 400
+    ת: 400,
+    ' ': 0,
 };
+
+input .oninput = () => {
+
+}
 
 calBtn .onclick = () => {
     el .innerHTML = '';
@@ -66,6 +76,13 @@ calBtn .onclick = () => {
 
     //breakdown
     document.getElementById('breakDown') .style = 'display: block';
+}
 
-    console.log(breakDownArray)
+input .oninput = () => {
+    for (let i = 0; i < falseLetters.length; i++) {
+        if (input.value === falseLetters[i]){
+            alert('Only works with hebrew letters')
+            input.value = '';
+        } 
+    }
 }

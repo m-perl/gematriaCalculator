@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 .header {
@@ -9,6 +10,7 @@
   background-color: darkblue;
   color: lightgrey;
   letter-spacing: 1px;
+  width: 100vw;
 }
 .header h1 {
   text-align: center;
@@ -18,7 +20,6 @@
 
 .container {
   margin: 150px 0;
-  height: 61vh;
 }
 .container .form {
   text-align: center;
@@ -36,6 +37,7 @@
   padding: 10px 20px;
   border: solid 2px darkblue;
   border-radius: 3px;
+  margin-top: 20px;
 }
 .container .answer .results {
   text-align: center;
@@ -59,8 +61,7 @@
 }
 
 .footer {
-  padding: 10px;
-  box-shadow: 0 0 20px -5px black;
+  padding: 15px;
 }
 .footer p {
   text-align: center;
